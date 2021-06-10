@@ -4,7 +4,8 @@
   "description": "React template",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode=development"
   },
   "author": "Nelson Amador",
   "license": "ISC",
@@ -33,6 +34,7 @@
     "toml": "^3.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
     "xml-loader": "^1.2.1",
     "yamljs": "^0.3.0"
   },

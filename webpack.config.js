@@ -7,6 +7,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+
+    devtool: 'inline-source-map',
+
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[id].[contenthash].js'
@@ -82,6 +85,12 @@ module.exports = {
     ],
 
     resolve: {
-        extensions: ['.js', '.jsx']
-    }
+        extensions: ['.js', '.jsx', '.json']
+    },
+
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000,
+    },
 }
