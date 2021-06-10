@@ -17,8 +17,8 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
+                test: /(\.css|\.s[ac]ss)$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
         ]
     },
@@ -32,5 +32,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'css/[id].[contenthash].css'
         })
-    ]
+    ],
+
+    resolve: {
+        extensions: ['.js', '.jsx']
+    }
 }
