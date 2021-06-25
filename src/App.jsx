@@ -1,13 +1,5 @@
-import './App.css';
-import './App.scss';
-
-import imgReact from './asset/react_img.png'
-
 const App = () => {
-    return (<div>
-                <h1>React Template</h1>
-                <img src={imgReact} />
-            </div>);
+    return (<div>ARG Framework</div>)
 }
 
 export default App;
