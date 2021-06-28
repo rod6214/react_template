@@ -11,6 +11,6 @@
     "build": "xbuild"
   },
   "dependencies": {
-    "arg_framework": "^1.4.9"
+    "arg_framework": "^1.5.0"
   }
 }
